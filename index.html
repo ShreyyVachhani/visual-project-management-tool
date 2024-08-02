@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="board">
+        <div class="column" id="todo">
+            <div class="column-header">To Do
+                <svg id="add-task-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="#fff" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-plus-circle">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="16" />
+                    <line x1="8" y1="12" x2="16" y2="12" />
+                </svg>
+                <!-- <img id="add-task-btn" src="/plus.png" alt="" srcset="">
+                <button id="add-task-btn"></button> -->
+            </div>
+            <div class="tasks" id="todo-tasks">
+
+
+            </div>
+        </div>
+        <div class="column" id="inprogress">
+            <div class="column-header">In Progress</div>
+            <div class="tasks" id="inprogress-tasks">
+
+            </div>
+        </div>
+        <div class="column" id="done">
+            <div class="column-header">Done</div>
+            <div class="tasks" id="done-tasks"></div>
+        </div>
+    </div>
+
+    <!-- Modal Form for Adding Task -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Task</h2>
+            <form id="task-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" name="project-name" required>
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task-name" required>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Viewing Task Details -->
+    <div id="view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-view">&times;</span>
+            <h2>Task Details</h2>
+            <p id="view-project-name"></p>
+            <p id="view-task-name"></p>
+            <p id="view-description"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
