@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    line-height: 25px;
 }
 
 .board {
@@ -112,14 +113,6 @@ img#add-task-btn {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus,
-.close-view:hover,
-.close-view:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 .project-name {
 background-color: rgb(191, 211, 252);
     color: rgb(70, 98, 154);
@@ -142,4 +135,7 @@ background-color: rgb(191, 211, 252);
     position: absolute;
     top: 32px;
     right: 17px;
+}
+div#comments-list p {
+    margin: 0;
 }
