@@ -45,9 +45,24 @@ body {
 input[type="text"],
 textarea {
     width: calc(100% - 22px);
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00000042;
+}
+form#comment-form button,form#task-form button {
+    background-color: #737f97;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
 img#add-task-btn {
     width: 32px;
@@ -80,10 +95,10 @@ img#add-task-btn {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #282d36;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    color: #fff;
     width: 80%;
     max-width: 400px;
     border-radius: 5px;
