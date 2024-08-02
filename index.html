@@ -19,19 +19,12 @@
                     <line x1="12" y1="8" x2="12" y2="16" />
                     <line x1="8" y1="12" x2="16" y2="12" />
                 </svg>
-                <!-- <img id="add-task-btn" src="/plus.png" alt="" srcset="">
-                <button id="add-task-btn"></button> -->
             </div>
-            <div class="tasks" id="todo-tasks">
-
-
-            </div>
+            <div class="tasks" id="todo-tasks"></div>
         </div>
         <div class="column" id="inprogress">
             <div class="column-header">In Progress</div>
-            <div class="tasks" id="inprogress-tasks">
-
-            </div>
+            <div class="tasks" id="inprogress-tasks"></div>
         </div>
         <div class="column" id="done">
             <div class="column-header">Done</div>
@@ -64,6 +57,12 @@
             <p id="view-project-name"></p>
             <p id="view-task-name"></p>
             <p id="view-description"></p>
+            <h3>Comments</h3>
+            <div id="comments-list"></div>
+            <form id="comment-form">
+                <textarea id="comment" placeholder="Add a comment" required></textarea>
+                <button type="submit">Add Comment</button>
+            </form>
         </div>
     </div>
 

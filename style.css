@@ -56,11 +56,14 @@ img#add-task-btn {
 }
 .task-card {
     background-color: rgba(0, 0, 0, 0.852);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 3px;
     color:#fff;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
+    border-radius: 13px;
     cursor: grab;
+    position: relative;
 }
 
 /* Modal Styles */
@@ -101,4 +104,27 @@ img#add-task-btn {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+.project-name {
+background-color: rgb(191, 211, 252);
+    color: rgb(70, 98, 154);
+    box-shadow: 1px 1px 20px rgb(191, 211, 252);
+    width: fit-content;
+        padding: 5px;
+        border-radius: 5px;
+        margin: auto;
+        margin-left: 1px;
+        margin-top: 15px;
+        font-family: 'Belanosima', sans-serif;
+}
+.task-name {
+    width: 100%;
+    font-weight: 500;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.notification-icon {
+    position: absolute;
+    top: 32px;
+    right: 17px;
 }
