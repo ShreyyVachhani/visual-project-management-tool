@@ -104,7 +104,7 @@ function addTask() {
         .html(`
             <div class="project-name">${projectName}</div>
             <div class="task-name">${taskName}</div>
-            <div class="notification-icon" style="display:none;"></div>
+            <div class="notification-icon" style="display:block;"></div>
         `);
 
     $('#todo-tasks').append(taskCard);
